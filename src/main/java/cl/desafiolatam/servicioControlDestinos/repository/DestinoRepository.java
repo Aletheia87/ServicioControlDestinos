@@ -1,5 +1,10 @@
 package cl.desafiolatam.servicioControlDestinos.repository;
 
-public interface DestinoRepository {
+import org.springframework.data.repository.CrudRepository;
+
+import cl.desafiolatam.servicioControlDestinos.model.Destino;
+
+public interface DestinoRepository extends CrudRepository<Destino,
+Integer> {
 
 }
