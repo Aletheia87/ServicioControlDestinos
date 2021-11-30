@@ -30,7 +30,7 @@ public class PasajeroController {
 	}
 	
 	@PostMapping("/agregarPasajero")
-	public String crearPasajero(@ModelAttribute Pasajero pasajero) {
+	public String crearPasajero(@ModelAttribute Pasajero pasajero, Model model) {
 		pasajeroService.save(pasajero);
 		
 		return "pasajeros";

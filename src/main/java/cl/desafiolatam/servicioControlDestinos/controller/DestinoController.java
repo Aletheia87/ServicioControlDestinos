@@ -36,7 +36,7 @@ public class DestinoController {
 	}
 	
 	@PostMapping("/agregarDestino")
-	public String crearDestino (@ModelAttribute Destino destino) {
+	public String crearDestino (@ModelAttribute Destino destino, Model model) {
 		destinoService.save(destino);
 		
 		return "destinos";

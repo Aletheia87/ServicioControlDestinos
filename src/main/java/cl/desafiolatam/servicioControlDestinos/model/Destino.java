@@ -1,6 +1,5 @@
 package cl.desafiolatam.servicioControlDestinos.model;
 
-import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -31,10 +30,10 @@ public class Destino {
 	private Integer id;
 	private String ciudad;
 	private String pais;
-	private Date fecha;
+	private String fecha;
 
 	@ManyToOne()
-	@JoinColumn(name = "rut")
+	@JoinColumn(name = "id_pasajero")
 	private Pasajero pasajero;
 
 	@Override

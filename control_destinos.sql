@@ -15,8 +15,13 @@ CREATE TABLE destino(
 id_destino INT auto_increment  not null primary key,
 ciudad VARCHAR(20),
 pais VARCHAR(20),
-fecha DATE,
+fecha VARCHAR(10),
 id_pasajero INT,
 foreign key (id_pasajero) references pasajero(id_pasajero)
 );
 
+Select *
+From pasajero;
+
+Select *
+From destino;
